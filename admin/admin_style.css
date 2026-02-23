@@ -1,0 +1,195 @@
+/* Admin-specific Styles - Cleaned Up Version */
+
+/* Menggunakan variabel dari style.css utama */
+:root {
+    --admin-bg: #f4f7fc;
+    --admin-panel-bg: #ffffff;
+    --admin-sidebar-bg: #2c3e50;
+    --admin-sidebar-link: #ecf0f1;
+    --admin-sidebar-hover: #34495e;
+    --admin-sidebar-active: var(--pastel-purple);
+    --admin-text-dark: #34495e;
+    --admin-text-light: #7f8c8d;
+    --admin-border-color: #e1e4e8;
+}
+
+body {
+    background-color: var(--admin-bg);
+    font-family: var(--font-main);
+    color: var(--admin-text-dark);
+    margin: 0;
+}
+
+.dashboard-wrapper {
+    display: flex;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 2rem 3rem;
+    max-width: calc(100% - 280px); /* Sidebar width + padding */
+}
+
+.header-dashboard {
+    margin-bottom: 2rem;
+    border-bottom: 1px solid var(--admin-border-color);
+    padding-bottom: 1rem;
+}
+
+.header-dashboard h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--admin-text-dark);
+}
+
+.content-area {
+    background: var(--admin-panel-bg);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.content-area h2 {
+    font-size: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--admin-border-color);
+}
+
+/* Simple Form Cleanup */
+.simple-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.form-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+.form-group label { 
+    margin-bottom: 0.5rem; 
+    font-weight: 600; 
+    font-size: 0.9rem;
+    color: var(--admin-text-light);
+}
+.form-group input, .form-group textarea, .form-group select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--admin-border-color);
+    border-radius: 5px;
+    font-family: var(--font-main);
+    font-size: 1rem;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+.form-group input:focus, .form-group textarea:focus, .form-group select:focus {
+    outline: none;
+    border-color: var(--admin-sidebar-active);
+    box-shadow: 0 0 0 2px rgba(195, 177, 225, 0.5);
+}
+
+/* Table Cleanup */
+.table-wrapper {
+    overflow-x: auto;
+    border: 1px solid var(--admin-border-color);
+    border-radius: 8px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 1rem;
+    border-bottom: 1px solid var(--admin-border-color);
+    text-align: left;
+    white-space: nowrap;
+}
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+th {
+    background-color: var(--admin-bg);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+tbody tr:hover {
+    background-color: #f9fafb;
+}
+
+/* Buttons */
+.action-btn {
+    color: white;
+    padding: 6px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    margin-right: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-terima { background-color: #28a745; }
+.btn-tolak { background-color: #dc3545; }
+
+.btn {
+    cursor: pointer;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    width: 260px;
+    background: var(--admin-sidebar-bg);
+    color: var(--admin-sidebar-link);
+    min-height: 100vh;
+    padding: 1.5rem;
+    flex-shrink: 0;
+}
+.sidebar .logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid var(--admin-sidebar-hover);
+}
+.sidebar .logo-container img {
+    height: 30px;
+}
+.sidebar .logo-container h2 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: var(--white);
+}
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+.sidebar ul li a {
+    display: block;
+    color: var(--admin-sidebar-link);
+    padding: 1rem;
+    text-decoration: none;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+.sidebar ul li a:hover {
+    background: var(--admin-sidebar-hover);
+    color: var(--white);
+}
+.sidebar a.active {
+    background: var(--admin-sidebar-active);
+    color: var(--white);
+    font-weight: 600;
+}

@@ -1,0 +1,180 @@
+Konsep Utama yang Diperbarui
+
+bdc: beyond dance crew
+Tema tetap: Putih – Ungu – Pink
+“Be the one, forever one, BDC LASGOOO!!!”
+
+Perubahan utama:
+
+🔐 Halaman Absensi dan Kas sekarang bersifat privat,
+hanya Admin atau Pengurus BDC yang bisa mengakses dan mengelola isinya.
+Anggota biasa tidak bisa melihat detail data keuangan, absensi, atau daftar pendaftar baru.
+
+👥 Struktur Pengguna (User Roles)
+
+Website ini akan punya 3 jenis pengguna:
+
+👤 Pengunjung Umum
+
+Bisa melihat: Home, Tentang Kami, Galeri, Info, dan Form Pendaftaran.
+
+Tidak bisa login ke sistem data.
+
+🩰 Anggota BDC (yang sudah diterima)
+
+Bisa login untuk melihat jadwal kegiatan, info berita, dan pengumuman internal.
+
+Tidak bisa melihat data absensi atau kas.
+
+👑 Admin & Pengurus Ekstrakurikuler
+
+Bisa login ke dashboard khusus admin.
+
+Bisa:
+
+Melihat dan mengedit data absensi.
+
+Melihat dan mencatat kas.
+
+Melihat pendaftar baru & menyetujui anggota baru.
+
+Mengelola kegiatan, berita, dan galeri.
+
+🏠 1. Halaman Utama (Home)
+
+(Masih sama seperti sebelumnya)
+
+Tampilkan banner besar dengan slogan “Be the One BDC, Let’s Go!”
+
+Tombol utama:
+🔹 Daftar Sekarang
+🔹 Lihat Kegiatan
+🔹 Login (Admin / Anggota)
+
+📝 2. Halaman Pendaftaran (Join Us)
+
+Pengunjung umum mengisi formulir pendaftaran.
+
+Setelah dikirim, data masuk ke database tapi belum tampil ke publik.
+
+Hanya admin/pengurus yang bisa membuka halaman daftar pendaftar baru melalui dashboard.
+
+Di dashboard admin, ada menu:
+
+📋 Daftar Pendaftar Baru
+Tombol [Terima] atau [Tolak] untuk mengatur statusnya.
+
+🔐 3. Halaman Login & Dashboard
+Tampilan Login
+
+Background gradasi ungu ke pink lembut dengan animasi cahaya panggung.
+
+Dua pilihan:
+
+Login Anggota
+
+Login Admin / Pengurus
+
+Setelah Login:
+
+Anggota masuk ke halaman khusus berisi jadwal, info, dan galeri internal.
+
+Admin / Pengurus diarahkan ke Dashboard Manajemen BDC.
+
+🧾 4. Dashboard Admin/Pengurus
+Warna Tema:
+
+Putih bersih dengan sidebar ungu dan aksen pink.
+
+Menu Utama Dashboard:
+
+🩰 Data Anggota & Pendaftar
+
+Lihat siapa saja yang sudah diterima.
+
+Bisa klik “Detail” untuk melihat biodata dan foto.
+
+Tab “Pendaftar Baru” untuk melihat calon anggota → tombol [Terima] / [Tolak].
+
+📋 Absensi
+
+Hanya bisa dilihat & diedit oleh admin/pengurus.
+
+Tabel:
+| Nama | Tanggal | Status (Hadir/Izin/Sakit) | Catatan |
+
+Bisa menambah baris baru untuk latihan berikutnya.
+
+Tombol “Cetak Laporan Bulanan” (PDF) untuk rekap kehadiran.
+
+💰 Kas Ekstrakurikuler
+
+Tabel pemasukan dan pengeluaran.
+| Tanggal | Deskripsi | Pemasukan | Pengeluaran | Saldo |
+
+Tombol:
+
+➕ Tambah Transaksi
+
+🧾 Cetak Laporan Kas
+
+Anggota biasa tidak bisa membuka halaman ini.
+
+🗓️ Kegiatan & Jadwal
+
+Tambah jadwal latihan atau acara lomba baru.
+
+Otomatis muncul di halaman “Info” untuk semua anggota.
+
+📰 Berita & Pengumuman
+
+Tambah artikel seperti “Persiapan Lomba”, “Recruitment Anggota Baru”.
+
+Bisa upload foto pendukung.
+
+👥 5. Halaman Anggota (Setelah Login Anggota Biasa)
+
+Background tetap putih dengan aksen ungu muda.
+
+Isi:
+
+Jadwal kegiatan dan latihan.
+
+Informasi terbaru dari pengurus.
+
+Galeri latihan dan lomba.
+
+Tidak ada akses ke absensi dan kas.
+
+📸 6. Halaman Galeri Kegiatan (Publik)
+
+(Masih sama seperti sebelumnya)
+
+Semua pengunjung bisa melihat momen latihan, lomba, dan pentas.
+
+Dilengkapi filter kategori dan efek hover lembut.
+
+📰 7. Halaman Info & Berita
+
+Tampil seperti blog.
+
+Artikel bisa diposting oleh admin/pengurus melalui dashboard.
+
+Contoh: “BDC Juara 1 Kompetisi Tari SMA se-Kota” atau “Latihan Tambahan Minggu Ini”.
+
+⚙️ 8. Footer (Bawah Halaman)
+
+💜 “Be the One BDC, Let’s Go!”
+© 2025 BDC Modern Dance Club — SMA [Nama Sekolah]
+
+Instagram | TikTok | YouTube
+
+🧠 Fitur Keamanan & Akses
+
+Semua halaman sensitif (absensi, kas, pendaftar) dilindungi login.
+
+Jika pengguna non-admin mencoba mengakses, muncul notifikasi:
+
+🚫 “Akses ditolak. Hanya pengurus BDC yang dapat melihat halaman ini.”
+
+Admin dapat membuat akun pengurus baru dan menetapkan peran (“Admin” atau “Anggota”).
